@@ -6,8 +6,8 @@
     Car Details
   </div>
   <div class="card-body">
-    {% if car.car_img %}
-  	<img class="card-img" src="{{car.car_img.url}}" alt="Card image cap">
+    {% if car.img %}
+  	<img class="card-img" src="{{car.img.url}}" alt="Card image cap">
     {% endif %}
     <h5 class="card-title">{{car.make}} {{car.model}}</h5>
     <p class="card-text">{{car.year}}</p>

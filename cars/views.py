@@ -28,7 +28,6 @@ def car_create(request):
 			form.save()
 			messages.success(request, "Successfully Created!")
 			return redirect('car-list')
-		print (form.errors)
 	context = {
 	"form": form,
 	}
@@ -44,7 +43,6 @@ def car_update(request, car_id):
 			form.save()
 			messages.success(request, "Successfully Edited!")
 			return redirect('car-list')
-		print (form.errors)
 	context = {
 	"form": form,
 	"car": car,
